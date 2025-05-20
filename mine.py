@@ -1,7 +1,16 @@
 from datetime import datetime, timedelta
 import uuid
 import random
+print('''
 
+ █████╗ ██╗   ██╗ █████╗ ███████╗    ████████╗ ██████╗  ██████╗ ██╗     
+██╔══██╗██║   ██║██╔══██╗╚══███╔╝    ╚══██╔══╝██╔═══██╗██╔═══██╗██║     
+███████║██║   ██║███████║  ███╔╝        ██║   ██║   ██║██║   ██║██║     
+██╔══██║╚██╗ ██╔╝██╔══██║ ███╔╝         ██║   ██║   ██║██║   ██║██║     
+██║  ██║ ╚████╔╝ ██║  ██║███████╗       ██║   ╚██████╔╝╚██████╔╝███████╗
+╚═╝  ╚═╝  ╚═══╝  ╚═╝  ╚═╝╚══════╝       ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝
+                                                                        
+''')
 def uuid1_to_datetime(uuid_str):
     """Convert UUIDv1 string to datetime."""
     try:
@@ -53,10 +62,10 @@ def datetime_to_uuid1(input_datetime):
         return f"Error: {e}"
 
 def main():
-    print("UUID v1 ↔ Timestamp Tool")
-    print("1. UUID → Timestamp")
-    print("2. Timestamp → UUID")
-    choice = input("Choose 1 or 2: ").strip()
+    print("[*] UUID v1 ↔ Timestamp Tool :)")
+    print("[1] UUID → Timestamp")
+    print("[2] Timestamp → UUID")
+    choice = input("[-] Choose 1 or 2: ").strip()
 
     if choice == "1":
         uuid_input = input("Enter UUIDv1: ").strip()
